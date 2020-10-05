@@ -8,7 +8,7 @@ double readWinningTime()
   printf("Please enter the winning time of the race: ");
   scanf("%lf", &winningTime);
   return winningTime;
-
+  //return 0.0;
 }
 
 double calcMetersPerSecond(double DISTANCE, double winningTime)
@@ -39,6 +39,13 @@ double calcMilesPerHour(double winningTime, double mph_conv)
   //return 0.0;
 }
 
+double calcTime100Yards(double fps)
+{
+  double yardsTime = 300.0/fps;
+  return yardsTime;
+  //return 0.0;
+}
+
 void displayResults(double fps, double kph, double mph, double mps)
 {
   printf("\nThe person was traveling at a rate of:\n");					  
@@ -59,13 +66,6 @@ void displayTimeToRunMile(double mph)
   printf("and ");
   printf("%.2lf seconds ", mileTimeS);
   printf("to run a mile. \n");
-}
-
-double calcTime100Yards(double fps)
-{
-  double yardsTime = 300.0/fps;
-  return yardsTime;
-  //return 0.0;
 }
 
 void displayHundredYardsTime(double yardsTime)
