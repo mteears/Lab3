@@ -1,0 +1,34 @@
+ clang-7 -pthread -lm -o main cscd255lab2.c lab3.c main.c
+main.c:26:1: warning: control reaches end of non-void function [-Wreturn-type]
+}// end main
+^
+1 warning generated.
+ ./main
+Please enter the winning time of the race: 100
+
+The person was traveling at a rate of:
+1.00  meters per second.
+3.28 feet per second.
+2.24 miles per hour.
+3.60 kilometers per hour.
+ 
+It would take the runner 26 minutes and 49.34 seconds to run a mile. 
+It would take the runner 91.44 seconds to run 100 yards.
+
+
+##########  Please note.  The above output was not modified from the original file given, and this error appeared as compiled from Stu. ##########
+##########  Below is the new output from Lab3. ##########
+
+ clang-7 -pthread -lm -o main cscd255lab2.c lab3.c main.c
+ ./main
+Please enter the winning time of the race: 100
+
+The person was traveling at a rate of:
+1.00  meters per second.
+3.28 feet per second.
+2.24 miles per hour.
+3.60 kilometers per hour.
+ 
+It would take the runner 26 minutes and 49.34 seconds to run a mile. 
+It would take the runner 91.44 seconds to run 100 yards.
+ 
